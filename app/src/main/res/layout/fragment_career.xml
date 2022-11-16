@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.Career.CareerFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_black"
+        android:text="Come Join our Clan!"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:transitionName="logo_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:transitionName="email_trans"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:startIconDrawable="@drawable/name_icon"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:transitionName="email_trans"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:startIconDrawable="@drawable/field_email_icon"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone No"
+            android:transitionName="email_trans"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:startIconDrawable="@drawable/phone_icon"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/position"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Position"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:startIconDrawable="@drawable/phone_icon"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:startIconDrawable="@drawable/phone_icon"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:text="Send Message"
+        android:textColor="@color/white"
+        android:transitionName="button_trans"
+        app:backgroundTint="#0B0000" />
+    <Button
+        android:id="@+id/uploadDoc"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Choose File"
+        android:textColor="@color/white"
+        android:transitionName="button_trans"
+        app:backgroundTint="#0B0000" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.oneroofit.it.ui.Home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_services"
+        android:name="com.oneroofit.it.ui.Services.ServicesFragment"
+        android:label="@string/menu_services"
+        tools:layout="@layout/fragment_services" />
+
+    <fragment
+        android:id="@+id/nav_career"
+        android:name="com.oneroofit.it.ui.Career.CareerFragment"
+        android:label="@string/menu_career"
+        tools:layout="@layout/fragment_career" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.oneroofit.it.ui.Contact.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/nav_our_team"
+        android:name="com.oneroofit.it.ui.Team.TeamFragment"
+        android:label="@string/menu_our_team"
+        tools:layout="@layout/fragment_team" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.oneroofit.it.ui.About.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_privacy_policy"
+        android:name="com.oneroofit.it.ui.Privacy.PrivacyPolicyFragment"
+        android:label="@string/menu_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+</navigation>

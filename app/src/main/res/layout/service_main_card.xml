@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:layout_margin="10dp"
+    android:id="@+id/service_main_card"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/serv_Image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/basic_logo"/>
+        <TextView
+            android:id="@+id/serv_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr.Amrat Mali"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/serv_Image"
+            android:textSize="20sp"
+            android:fontFamily="@font/baloo"/>
+        <TextView
+            android:id="@+id/serv_Desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Nice Service Given By One RoofIt"
+            android:layout_toRightOf="@id/serv_Image"
+            android:layout_below="@id/serv_Name"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

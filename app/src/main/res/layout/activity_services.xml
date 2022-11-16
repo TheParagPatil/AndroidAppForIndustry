@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    tools:context=".activities.ServicesActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/appbarlayout_id">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/purple_200"
+            app:expandedTitleMarginEnd="@dimen/google_1x"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="Services Title">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin">
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/serv_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/webdev" />
+
+
+                <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/aa_anime_name"
+                        android:text="Anime Title"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:id="@+id/aa_categorie"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Studio"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/aa_studio"/>-->
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="16dp"  >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="Dummy Text"
+        android:textColor="#090101"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/serv_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/muli"
+        android:text="Anime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjAnime Descriptioncdnjjjjjjjjjj                       jnjjnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn   njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj  njjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj njjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+        android:textColor="#000"
+        android:textSize="18sp" />
+</LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

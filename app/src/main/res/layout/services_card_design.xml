@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="160dp"
+    android:layout_height="290dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:clickable="true"
+    android:id="@+id/container_services"
+    android:orientation="horizontal"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="8dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/serviceImage"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/wordpress"
+        android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/serviceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Web Development"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/serviceDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:ems="8"
+            android:ellipsize="end"
+            android:text="Lorem ipsum Lorem ipsum Lorem ipsum tipsum sipus "/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
